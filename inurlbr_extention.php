@@ -66,13 +66,13 @@ class SQLDB extends SQLite3 {
 
 
 
-$commandolijstje = array('columns:','data:','tablename:');
-$opties = getopt('h::', $commandolijstje);
-var_dump($opties);
-if($opties['tablename'] != '' ){
-	$T = new SQLDB();
-	$T->query($T->ToDB($opties['columns'],$opties['data'],$opties['tablename']));	
-} # ./inurlbr_extention.php --columns 'ip,raw_loot,script,www' --'"82.75.163.96","sdfgfgsdgfsdg","www.test.nl"' --tablename 'BigDump'
+#$commandolijstje = array('columns:','data:','tablename:');
+#$opties = getopt('h::', $commandolijstje);
+#var_dump($opties);
+#if($opties['tablename'] != '' ){
+#	$T = new SQLDB();
+#	$T->query($T->ToDB($opties['columns'],$opties['data'],$opties['tablename']));	
+#} # ./inurlbr_extention.php --columns 'ip,raw_loot,script,www' --'"82.75.163.96","sdfgfgsdgfsdg","www.test.nl"' --tablename 'BigDump'
 
 
 
