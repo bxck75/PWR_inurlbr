@@ -2338,18 +2338,18 @@ function __process($resultadoURL) {
       echo $_SESSION['config']['dork'];
 
 
-        // $_SESSION['config']['irc']['irc_connection'] = (not_isnull_empty($_SESSION['config']['irc']['conf']) ? __ircConect($_SESSION['config']['irc']) : NULL);
+         $_SESSION['config']['irc']['irc_connection'] = (not_isnull_empty($_SESSION['config']['irc']['conf']) ? __ircConect($_SESSION['config']['irc']) : NULL);
 
-        // $_SESSION['config']['irc']['my_fork'] = pcntl_fork();
+         $_SESSION['config']['irc']['my_fork'] = pcntl_fork();
 
-        // if ($_SESSION['config']['irc']['my_fork'] == 0) {
+         if ($_SESSION['config']['irc']['my_fork'] == 0) {
 
-        //     (not_isnull_empty($_SESSION['config']['irc']['irc_connection']) ? __ircPong($_SESSION['config']['irc']) : NULL);
-        //     exit(0);
-        // } else if ($_SESSION['config']['irc']['my_fork'] == -1) {
+             (not_isnull_empty($_SESSION['config']['irc']['irc_connection']) ? __ircPong($_SESSION['config']['irc']) : NULL);
+             exit(0);
+         } else if ($_SESSION['config']['irc']['my_fork'] == -1) {
 
-        //     __getOut(__bannerLogo() . "{$_SESSION["c1"]}[ INFO ]{$_SESSION["c0"]}{$_SESSION["c2"]}ERROR Fork failed{$_SESSION["c0"]}\n");
-        // }
+             __getOut(__bannerLogo() . "{$_SESSION["c1"]}[ INFO ]{$_SESSION["c0"]}{$_SESSION["c2"]}ERROR Fork failed{$_SESSION["c0"]}\n");
+         }
 
         $_SESSION['config']['user-agent'] = ($_SESSION['config']['shellshock']) ? $_SESSION['config']['user_agent_xpl'] : $_SESSION['config']['user-agent'];
         foreach ($resultadoURL[0] as $url) {
