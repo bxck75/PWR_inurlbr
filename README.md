@@ -4,6 +4,9 @@
 - --custom-blacklist
 - --custom-config
 
+needs : NMAP,SQLMAP,DIG,WPSCAN,FIMAP,DIRB,BLACKWIDOW
+
+The rest of the exploit scripts are included
 
 Example usage:
 
