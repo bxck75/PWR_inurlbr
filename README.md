@@ -37,4 +37,4 @@ for list of --exploit-vul-id options which you can add if you like
     [13] => BLACKWIDOW::echo "BLACKWIDOW RUNNING" && proxychains blackwidow -l 1  -u "_TARGETFULL_" -d "_TARGET_" -s "output/_TARGET_/blackwidow_output.lst"
     [14] => SPIDER::echo "SPIDER SCRIPT" && python "modules/crawl.py" --verbose --max-urls=10 --max-time 3 -d 4 "http://"_TARGET_
     [15] => PORTTODB::bash Commands.sh _TARGET_
-
+    [16] => LOOTHANDLER::bash LootHandler.sh
