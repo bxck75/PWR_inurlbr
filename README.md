@@ -1,8 +1,17 @@
 # PWR_inurlbr
 
+- added sqllite db logging
+- --custom-blacklist
+- --custom-config
+
+
 Example usage:
 
 ./inurlbr.php  --dork 'inurl:.php?id=' --custom-config K00B404.conf -s maart2018.lst --tor-random  --mp 1 -q 1,2,3,4,5,6,7 --exploit-vul-id 1,2,3,5,15,4 --exploit-get "'0x27%27"  --custom-blacklist '.fleurlis.,.katun.,.alphaone.,.katun.me,.bible-history.'
+
+Using a dork list and 10 pages of every searchengine (23) do:
+
+./inurlbr.php  --dork-file 'Dorks/dorks2017-prefixed.lst' --custom-config K00B404.conf -s maart2018.lst --tor-random  --mp 10 -q all --exploit-vul-id 1,2,3,5,15 --exploit-get "'0x27%27"  --custom-blacklist '.fleurlis.,.katun.,.alphaone.,.katun.me,.bible-history.'
 
 
 for list of --exploit-vul-id options which you can add if you like
