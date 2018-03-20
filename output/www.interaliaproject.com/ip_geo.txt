@@ -1,0 +1,4 @@
+www.interaliaproject.com
+GeoIP Country Edition: US, United States
+GeoIP City Edition, Rev 1: US, TX, Texas, Houston, 77092, 29.830099, -95.473900, 618, 713
+GeoIP ASNum Edition: AS20013 CyrusOne LLC

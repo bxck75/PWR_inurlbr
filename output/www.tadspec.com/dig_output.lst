@@ -1,0 +1,21 @@
+ProxyChains-3.1 (http://proxychains.sf.net)
+
+; <<>> DiG 9.10.6-Debian <<>> -4 www.tadspec.com
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 29809
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;www.tadspec.com.		IN	A
+
+;; ANSWER SECTION:
+www.tadspec.com.	3600	IN	A	82.80.253.45
+
+;; Query time: 91 msec
+;; SERVER: 89.101.251.229#53(89.101.251.229)
+;; WHEN: Tue Mar 20 19:59:59 CET 2018
+;; MSG SIZE  rcvd: 60
+

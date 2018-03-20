@@ -1,0 +1,22 @@
+ProxyChains-3.1 (http://proxychains.sf.net)
+
+; <<>> DiG 9.10.6-Debian <<>> -4 www.teamgear.us
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 18191
+;; flags: qr rd ra; QUERY: 1, ANSWER: 2, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;www.teamgear.us.		IN	A
+
+;; ANSWER SECTION:
+www.teamgear.us.	3144	IN	CNAME	teamgear.us.
+teamgear.us.		144	IN	A	50.62.242.1
+
+;; Query time: 15 msec
+;; SERVER: 89.101.251.228#53(89.101.251.228)
+;; WHEN: Tue Mar 20 20:07:02 CET 2018
+;; MSG SIZE  rcvd: 74
+

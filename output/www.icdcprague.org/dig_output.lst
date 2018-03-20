@@ -1,0 +1,21 @@
+ProxyChains-3.1 (http://proxychains.sf.net)
+
+; <<>> DiG 9.10.6-Debian <<>> -4 www.icdcprague.org
+;; global options: +cmd
+;; Got answer:
+;; ->>HEADER<<- opcode: QUERY, status: NOERROR, id: 50600
+;; flags: qr rd ra; QUERY: 1, ANSWER: 1, AUTHORITY: 0, ADDITIONAL: 1
+
+;; OPT PSEUDOSECTION:
+; EDNS: version: 0, flags:; udp: 4096
+;; QUESTION SECTION:
+;www.icdcprague.org.		IN	A
+
+;; ANSWER SECTION:
+www.icdcprague.org.	3598	IN	A	217.198.122.48
+
+;; Query time: 13 msec
+;; SERVER: 89.101.251.228#53(89.101.251.228)
+;; WHEN: Tue Mar 20 20:00:07 CET 2018
+;; MSG SIZE  rcvd: 63
+
