@@ -193,7 +193,7 @@ $_SESSION['config']['blacklist'].= "-treadofpioneers -exploit.,dork.,security.,d
 # add custom blacklist items
 if($opcoes['custom-blacklist']){
   $_SESSION['config']['blacklist'].=$opcoes['custom-blacklist'];
-  echo "Adding Your Custom BlackList items ".$_SESSION['config']['blacklist'];
+  //echo "Adding Your Custom BlackList items ".$_SESSION['config']['blacklist'];
 }
 # end of custom code
 
@@ -2308,7 +2308,7 @@ function __process($resultadoURL) {
         foreach ($resultadoURL[0] as $url) {
          
           //To DB K00B404 Mod
-          error_reporting(-1);
+          error_reporting(0);
           $db = new SQLDB;
           $urlexpl = explode('//',$url);
           $cleanurl = explode('/',$urlexpl[1]);
