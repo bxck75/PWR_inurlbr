@@ -1,4 +1,0 @@
-www.teamgear.us
-GeoIP Country Edition: US, United States
-GeoIP City Edition, Rev 1: US, AZ, Arizona, Scottsdale, 85260, 33.611900, -111.890701, 753, 480
-GeoIP ASNum Edition: AS26496 GoDaddy.com, LLC

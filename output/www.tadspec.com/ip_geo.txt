@@ -1,4 +1,0 @@
-www.tadspec.com
-GeoIP Country Edition: IL, Israel
-GeoIP City Edition, Rev 1: IL, N/A, N/A, N/A, N/A, 31.500000, 34.750000, 0, 0
-GeoIP ASNum Edition: AS8551 Bezeq International
