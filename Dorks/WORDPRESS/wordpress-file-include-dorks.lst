@@ -1,0 +1,22 @@
+inurl:"?fdx_switcher=mobile" site:.be
+inurl:"/wp-content/plugins/wp-mon" site:.be
+inurl:"php?page=miwoftp" site:.be
+inurl:wp-content/themes/Divi/ site:.be
+revslider.php "index of" site:.be
+inurl:"/plugins/justified-image-grid" site:.be
+wp-admin & inurl:revslider_show_image site:.be
+"Index of" & /wp-content/themes/lote27/ site:.be
+"Index of" & /wp-content/themes/trinity/ site:.be
+"Index of" & /wp-content/themes/beach_apollo/ site:.be
+"Index of" & /wp-content/themes/striking_r/ site:.be
+"Index of" & /wp-content/themes/Avada/ site:.be
+"Index of" & /wp-content/themes/Centum/ site:.be
+"Index of" & /wp-content/themes/medicate/ site:.be
+"Index of" & /wp-content/themes/ultimatum/ site:.be
+"Index of" & /wp-content/themes/IncredibleWP/ site:.be
+"Index of" & /wp-content/themes/cuckootap/ site:.be
+"Index of" & /wp-content/themes/Avada/ site:.be
+inurl:revslider_show_image -intext:revslider_show_image site:.be
+"Index of" & /wp-content/themes/medicate/ site:.be
+"Index of" & /wp-content/themes/Centum/ site:.be
+inurl:ajax-store-locator site:.be
