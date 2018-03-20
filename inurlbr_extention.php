@@ -1,4 +1,5 @@
 <?php
+error_reporting(-1);
 class SQLDB extends SQLite3 {
 
 	function __construct(){
