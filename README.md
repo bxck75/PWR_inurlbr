@@ -1,11 +1,8 @@
 # PWR_inurlbr
- run using command like 
 
-./inurlbr.php -s scan20180318.lst --dork-file 'Dorks/sqli_dorks.lst' --tor-random --exploit-get "'0x27%27" --exploit-vul-id 1,2,4 --custom-config K00B404.conf -q 1 --mp 10 --blacklist '.fleurlis.,.katun.,.alphaone.,.katun.me,.bible-history.'
+Example usage:
 
-or 
-
-./inurlbr.php -s scan20180318.lst --dork 'inurl:.php?id=' --tor-random --exploit-get "'0x27%27" --exploit-vul-id 1,2,4 --custom-config K00B404.conf -q 1 --mp 10 --blacklist '.fleurlis.,.katun.,.alphaone.,.katun.me,.bible-history.'
+./inurlbr.php  --dork 'inurl:.php?id=' --custom-config K00B404.conf -s maart2018.lst --tor-random  --mp 1 -q 1,2,3,4,5,6,7 --exploit-vul-id 1,2,3,5,15,4 --exploit-get "'0x27%27"  --custom-blacklist '.fleurlis.,.katun.,.alphaone.,.katun.me,.bible-history.'
 
 
 for list of --exploit-vul-id options which you can add if you like
