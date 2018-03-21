@@ -1941,7 +1941,20 @@ function __installDepencia() {
 ################################################################################
 #RESPONSIBLE FOR RUN COMMANDS IN TERMINAL#######################################
 ################################################################################
+//K00b404
+        function mysystem($command) {
 
+          if (!($p=popen("($command)2>&1","r"))) {
+            return 126;
+          }
+          while (!feof($p)) {
+            $line=fgets($p,1000);
+            $out .= $line;
+          }
+          pclose($p);
+          return $out;
+        }
+        //K00b404
 function __command($commando, $alvo) {
 
     if (!is_null($commando)) {
@@ -1983,21 +1996,30 @@ function __command($commando, $alvo) {
 
         echo "\n{$_SESSION["c1"]}|_[ * ]__\n";
         echo "         |[ EXTERNAL COMMAND ]:: {$command[0]}{$_SESSION["c11"]}\n";
-        $_ = array(0 => ($_SESSION['config']['popup']) ? 'sudo xterm -geometry 134x50+1900+0 -title "Auxiliary Window - INURLBR / COMMAND" -e ' : NULL, 1 => ($_SESSION['config']['popup']) ? ' > /dev/null &' : NULL);
+        $_ = array(0 => ($_SESSION['config']['popup']) ? 'sudo xterm -geometry 134x50+1900+0 -title "Auxiliary Window - INURLBR / COMMAND" -e ' : NULL, 1 => ($_SESSION['config']['popup']) ? ' | tee -a /root/stuff/tools/PWR_inurl/output/inurlbr_log.log 2> /dev/null &' : NULL);
         echo ($_SESSION['config']['popup'] ? "\t[!] opening auxiliary window...\n" : NULL);
         $dados = system($_[0] . $command[1] . $_[1], $dados);
-                $result123 = mysystem($command[1]);
+        //K00b404
+        error_reporting(0);
+       
+        $result123 = mysystem($command[1]);
+        //$result123 = system($_[0] . $command[1] . $_[1], $dados);
+        var_dump($command[1]);
+        var_dump($result123);
 
+        //K00b404
         sleep(1) . __plus();
         $TARGETIP = $_SESSION['config']['server_ip'];
         #write output to db where ip is already 
-        $db = new SQLDB();
-        
-
+               
+        //K00b404
+ $db = new SQLDB();
         if($result123){
-echo $Q = 'update BigDump set raw_loot = raw_loot || " | " || "'.htmlspecialchars_decode(stripslashes(str_replace('(','|',str_replace('(','|',$result123))),ENT_NOQUOTES).'" where ip ="'.$TARGETIP.'";';
+          echo $Q = 'update BigDump set raw_loot = raw_loot || " | " || "'.htmlspecialchars_decode(stripslashes(str_replace('(','|',str_replace('(','|',$result123))),ENT_NOQUOTES).'" where ip ="'.$TARGETIP.'";';
           $db->query($Q);
         }
+
+        //K00b404
         echo $_SESSION["c0"];
     }
     if (empty($dados[0])) {
