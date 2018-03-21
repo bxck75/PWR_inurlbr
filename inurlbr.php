@@ -1986,8 +1986,17 @@ function __command($commando, $alvo) {
         $_ = array(0 => ($_SESSION['config']['popup']) ? 'sudo xterm -geometry 134x50+1900+0 -title "Auxiliary Window - INURLBR / COMMAND" -e ' : NULL, 1 => ($_SESSION['config']['popup']) ? ' > /dev/null &' : NULL);
         echo ($_SESSION['config']['popup'] ? "\t[!] opening auxiliary window...\n" : NULL);
         $dados = system($_[0] . $command[1] . $_[1], $dados);
-        sleep(1) . __plus();
+                $result123 = mysystem($command[1]);
 
+        sleep(1) . __plus();
+        $TARGETIP = $_SESSION['config']['server_ip'];
+        #write output to db where ip is already 
+        $db = new SQLDB();
+        
+
+        if($result123){
+echo $Q = 'update BigDump set raw_loot = raw_loot || " | " || "'.htmlspecialchars_decode(stripslashes(str_replace('(','|',str_replace('(','|',$result123))),ENT_NOQUOTES).'" where ip ="'.$TARGETIP.'";';
+          $db->query($Q);
         echo $_SESSION["c0"];
     }
     if (empty($dados[0])) {
