@@ -222,7 +222,7 @@ $_SESSION['config']['line'] = "\n{$_SESSION["c1"]} _[ - ]{$_SESSION["c7"]}::{$_S
 (isset($opcoes['install-dependence']) ? __installDepencia() : NULL);
 
 #[+]UPDATE SCRIPT
-(isset($opcoes['update']) ? __update() : NULL);
+#(isset($opcoes['update']) ? __update() : NULL);
 
 ################################################################################
 #CAPTURE OPTIONS################################################################
