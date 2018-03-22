@@ -1,0 +1,4 @@
+www.smash-uk.com
+GeoIP Country Edition: US, United States
+GeoIP City Edition, Rev 1: US, CA, California, Brea, 92821, 33.926899, -117.861198, 803, 714
+GeoIP ASNum Edition: AS26347 New Dream Network, LLC

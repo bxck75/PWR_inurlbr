@@ -1,0 +1,4 @@
+www.vacationet.com
+GeoIP Country Edition: US, United States
+GeoIP City Edition, Rev 1: US, IL, Illinois, Chicago, 60606, 41.882401, -87.637703, 602, 312
+GeoIP ASNum Edition: AS3064 Affinity Internet, Inc

@@ -1,0 +1,4 @@
+www.icdcprague.org
+GeoIP Country Edition: CZ, Czech Republic
+GeoIP City Edition, Rev 1: CZ, N/A, N/A, N/A, N/A, 50.084801, 14.411200, 0, 0
+GeoIP ASNum Edition: AS34222 ZONER software, a.s

@@ -1,0 +1,4 @@
+eco3d.co.uk
+GeoIP Country Edition: DE, Germany
+GeoIP City Edition, Rev 1: DE, N/A, N/A, N/A, N/A, 51.299301, 9.490900, 0, 0
+GeoIP ASNum Edition: AS8560 1&1 Internet SE

@@ -1,0 +1,24 @@
+ProxyChains-3.1 (http://proxychains.sf.net)
+
+Starting Nmap 7.25BETA1 ( https://nmap.org ) at 2018-03-22 20:18 CET
+Initiating SYN Stealth Scan at 20:18
+Scanning 45.40.182.129 [100 ports]
+Discovered open port 22/tcp on 45.40.182.129
+Discovered open port 443/tcp on 45.40.182.129
+Discovered open port 80/tcp on 45.40.182.129
+Discovered open port 21/tcp on 45.40.182.129
+Completed SYN Stealth Scan at 20:19, 5.14s elapsed (100 total ports)
+Nmap scan report for 45.40.182.129
+Host is up, received user-set (0.18s latency).
+Scanned at 2018-03-22 20:18:59 CET for 5s
+Not shown: 96 filtered ports
+Reason: 96 no-responses
+PORT    STATE SERVICE REASON
+21/tcp  open  ftp     syn-ack ttl 48
+22/tcp  open  ssh     syn-ack ttl 48
+80/tcp  open  http    syn-ack ttl 48
+443/tcp open  https   syn-ack ttl 48
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 5.20 seconds
+           Raw packets sent: 197 (8.668KB) | Rcvd: 16 (704B)

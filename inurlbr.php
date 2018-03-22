@@ -1277,8 +1277,10 @@ function Log_Used_Dorks($dork,$engine){
   //var_dump($checkrow);
   if(!$checkrow){
     $db->query('INSERT INTO `used-dork-log` (`dork`,`engine`,`count`) VALUES ("'.$dork.'","'.$engine.'","'.$count.'");');  
+    echo $count;
   }else{
     $count = $count + $checkrow['count'];
+
     $db->query('UPDATE `used-dork-log`  SET `count` = "'.$count.'" WHERE `dork` = "'.$dork.'";');  
   }
 
@@ -2004,8 +2006,8 @@ function __command($commando, $alvo) {
        
         $result123 = mysystem($command[1]);
         //$result123 = system($_[0] . $command[1] . $_[1], $dados);
-        var_dump($command[1]);
-        var_dump($result123);
+        //var_dump($command[1]);
+        //var_dump($result123);
 
         //K00b404
         sleep(1) . __plus();
@@ -2013,10 +2015,11 @@ function __command($commando, $alvo) {
         #write output to db where ip is already 
                
         //K00b404
- $db = new SQLDB();
+        $db = new SQLDB();
         if($result123){
-          echo $Q = 'update BigDump set raw_loot = raw_loot || " | " || "'.htmlspecialchars_decode(stripslashes(str_replace('(','|',str_replace('(','|',$result123))),ENT_NOQUOTES).'" where ip ="'.$TARGETIP.'";';
+          $Q = 'update BigDump set raw_loot = raw_loot || " | " || "'.htmlspecialchars_decode(stripslashes(str_replace('(','|',str_replace('(','|',$result123))),ENT_NOQUOTES).'" where ip ="'.$TARGETIP.'";';
           $db->query($Q);
+
         }
 
         //K00b404
@@ -2826,6 +2829,11 @@ function __exitProcess() {
     print_r(!$_SESSION['config']['extrai-email'] ? $_SESSION['config']['resultado_valores'] : NULL);
 
     echo "\n{$_SESSION["c1"]}\_________________________________________________________________________________________/{$_SESSION["c0"]}\n";
+    //K00b404
+    $db = new SQLDB;
+    echo $Q = 'update BigDump set raw_loot = replace(raw_loot,"| ProxyChains-3.1 |http://proxychains.sf.net)","LoG:"."'.date().'") ;';
+    $db->query($Q);
+    //K00b404
     __getOut("\n");
 }
 
@@ -3805,21 +3813,23 @@ function __main($dork, $motor, $cod) {
             //$objNewSearch(urlencode($dork_[3][$i]), $motor, $list_proxy);
 		
             __engines(urlencode($dork_[3][$i]), $list_proxy) . __plus();
-
+            //K00B404 CODE//
+                // $db = new SQLDB();
+                // $sql = 'update `used-dork-log` set count = count + '.count(explode("\n", $_SESSION["config"]["totas_urls"])).' where dork ="'.$dork_[3][$i].'";';
+                // echo $sql;
+                // die();
+                // $resultpoep = $db->query($sql);//->fetchArray(SQLITE3_ASSOC);
+            //K00B404 CODE//
             ($_SESSION["config"]["pr"]) ? __process(explode("\n", $_SESSION["config"]["totas_urls"])) . __plus() : NULL;
             ($_SESSION["config"]["pr"]) ? $_SESSION["config"]["totas_urls"] = NULL : NULL;
 
             echo "\n";
+
         }
     }
 
     (!$_SESSION["config"]["pr"]) ? __process(explode("\n", $_SESSION["config"]["totas_urls"])) . __plus() : NULL;
-//K00B404 CODE//
-    $db = new SQLDB();
-    $sql = 'update `used-dork-log` set count = count + '.$_SESSION['config']['total_url'].' where dork ="'.htmlspecialchars_decode($_SESSION['config']['dork'].'";');
-    echo $sql;
-    $resultpoep = $db->query($sql);//->fetchArray(SQLITE3_ASSOC);
-//K00B404 CODE//
+
     __exitProcess();
 }
 

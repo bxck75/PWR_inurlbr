@@ -1,0 +1,44 @@
+ProxyChains-3.1 (http://proxychains.sf.net)
+
+Starting Nmap 7.25BETA1 ( https://nmap.org ) at 2018-03-22 20:32 CET
+Initiating SYN Stealth Scan at 20:32
+Scanning 87.106.248.247 [100 ports]
+Discovered open port 22/tcp on 87.106.248.247
+Discovered open port 3306/tcp on 87.106.248.247
+Discovered open port 993/tcp on 87.106.248.247
+Discovered open port 53/tcp on 87.106.248.247
+Discovered open port 110/tcp on 87.106.248.247
+Discovered open port 995/tcp on 87.106.248.247
+Discovered open port 443/tcp on 87.106.248.247
+Discovered open port 21/tcp on 87.106.248.247
+Discovered open port 80/tcp on 87.106.248.247
+Discovered open port 143/tcp on 87.106.248.247
+Discovered open port 587/tcp on 87.106.248.247
+Discovered open port 465/tcp on 87.106.248.247
+Discovered open port 106/tcp on 87.106.248.247
+Discovered open port 8443/tcp on 87.106.248.247
+Completed SYN Stealth Scan at 20:32, 1.67s elapsed (100 total ports)
+Nmap scan report for 87.106.248.247
+Host is up, received user-set (0.029s latency).
+Scanned at 2018-03-22 20:32:13 CET for 1s
+Not shown: 84 filtered ports, 2 closed ports
+Reason: 84 no-responses and 2 resets
+PORT     STATE SERVICE    REASON
+21/tcp   open  ftp        syn-ack ttl 51
+22/tcp   open  ssh        syn-ack ttl 51
+53/tcp   open  domain     syn-ack ttl 51
+80/tcp   open  http       syn-ack ttl 51
+106/tcp  open  pop3pw     syn-ack ttl 51
+110/tcp  open  pop3       syn-ack ttl 51
+143/tcp  open  imap       syn-ack ttl 51
+443/tcp  open  https      syn-ack ttl 51
+465/tcp  open  smtps      syn-ack ttl 51
+587/tcp  open  submission syn-ack ttl 51
+993/tcp  open  imaps      syn-ack ttl 51
+995/tcp  open  pop3s      syn-ack ttl 51
+3306/tcp open  mysql      syn-ack ttl 51
+8443/tcp open  https-alt  syn-ack ttl 51
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 1.77 seconds
+           Raw packets sent: 185 (8.140KB) | Rcvd: 20 (868B)

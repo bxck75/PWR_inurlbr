@@ -1,0 +1,4 @@
+www.slightergolf.com
+GeoIP Country Edition: US, United States
+GeoIP City Edition, Rev 1: US, UT, Utah, Provo, 84606, 40.233799, -111.658501, 770, 801
+GeoIP ASNum Edition: AS46606 Unified Layer

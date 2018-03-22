@@ -20,7 +20,8 @@ class SQLDB extends SQLite3 {
 
 	function ToDB($columns,$data,$tablename){
 		#ToDB('ip,ports,raw_loot,script','"82.75.163.96","80:5900:666:777","sdfgfgsdgfsdg"','dig');
-		echo $this->InsertQ = "Insert into ".$tablename." (".$columns.") VALUES (".$data.");";
+		$this->InsertQ = "Insert into ".$tablename." (".$columns.") VALUES (".$data.");";
+		echo "Inserted in to SQLite-DB : ".$this->database;
 		return $this->InsertQ;	
 	}
 
@@ -61,19 +62,7 @@ class SQLDB extends SQLite3 {
 	function GetEngines(){
 		return array("1"=>"GOOGLE1","2"=>"BING","3"=>"YAHOO1","4"=>"ASK","5"=>"HAO123","6"=>"GOOGLE2","7"=>"LYCOS","8"=>"UOL","9"=>"YAHOO2","10"=>"SAPO","11"=>"DMOZ","12"=>"GIGABLAST","13"=>"NEVER","14"=>"BAIDU","15"=>"YANDEX","16"=>"ZOO","17"=>"HOTBOT","18"=>"ZHONGSOU","19"=>"HKSEARCH","20"=>"EZILION","21"=>"SOGOU","22"=>"DUCK","23"=>"BOOROW","24"=>"GOOGLE3","e1"=>"TOR FIND","e2"=>"ELEPHANT","e3"=>"TORSEARCH","e4"=>"WIKILEAKS","e5"=>"OTN","e6"=>"EXPLOITS");
 	}
-	function mysystem($command) {
 
-	  if (!($p=popen("($command)2>&1","r"))) {
-	    return 126;
-	  }
-	  echo serialize($p);
-	  while (!feof($p)) {
-	    $line=fgets($p,1000);
-	    $out .= $line;
-	  }
-	  pclose($p);
-	  return $out;
-	}
 }
 
 

